@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     #'django.contrib.staticfiles',
     
     ## Packages ##
+    'django_browser_reload',
     'django_components',
     'django_components.safer_staticfiles',
     'django_cotton',
@@ -64,6 +65,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'django_browser_reload.middleware.BrowserReloadMiddleware',
 ]
 
 ROOT_URLCONF = 'uxo.urls'

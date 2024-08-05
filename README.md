@@ -6,6 +6,7 @@ For default Start Project With Django
 ```
 python -m venv .venv
 source .venv/bin/activate
+pip install --upgrade pip
 pip install -r paket.txt
 python manage.py migrate
 python manage.py tailwind install
