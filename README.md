@@ -6,7 +6,7 @@ For default Start Project With Django
 
 ```
 python manage.py migrate
-ptyhon manage.py tailwind install
-ptyhon manage.py tailwind start
+python manage.py tailwind install
+python manage.py tailwind start
 python manage.py runserver
 ```
