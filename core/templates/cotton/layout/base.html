@@ -1,0 +1,23 @@
+{% load component_tags %}
+{% load static tailwind_tags %}
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="id">
+	<head>
+    <title>Uxo</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		{% tailwind_css %}
+        {% component_css_dependencies %}
+	</head>
+
+	<body class="bg-teal-50 leading-normal tracking-normal">
+		<div class="container mx-auto">
+			{{slot}}
+		</div>
+        <script src="{% static 'preline/dist/preline.js' %}"></script>
+        {% component_js_dependencies %}
+	</body>
+</html>
